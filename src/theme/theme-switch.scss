@@ -1,0 +1,13 @@
+$background-color-theme: red;
+$background-color-theme1: blue;
+$background-color-theme2: green;
+
+@mixin bg_color($color){
+  background-color: $color;
+  [data-theme="theme1"] & {
+    background-color: $background-color-theme1;
+  }
+  [data-theme="theme2"] & {
+    background-color: $background-color-theme2;
+  }
+}

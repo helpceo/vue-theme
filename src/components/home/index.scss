@@ -1,0 +1,7 @@
+@import '../../theme/theme-switch.scss';
+
+.home-button{
+  width: 200px;
+  height: 50px;
+  @include bg_color($background-color-theme);
+}
